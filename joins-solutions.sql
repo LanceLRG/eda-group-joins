@@ -1,7 +1,7 @@
 --Get all customers and their addresses.
 SELECT *
 FROM "customers"
-JOIN "addresses" ON "addresses"."id"="customers"."id";
+JOIN "addresses" ON "addresses"."customer_id"="customers"."id";
 
 --Get all orders and their line items (orders, quantity and product).
 SELECT orders.id, "quantity", "description"
